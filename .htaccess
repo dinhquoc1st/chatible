@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{QUERY_STRING} ^(.*)(?:^|&)fbclid=(?:[^&]*)((?:&|$).*)$ [NC]
+RewriteCond %1%2 (^|&)([^&].*|$)
+RewriteRule ^(.*) /$1?%2 [R=301,L]
+</IfModule>
