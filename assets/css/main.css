@@ -1,0 +1,39 @@
+.dropzone {
+    border: 2px dashed #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.info-upload{
+    padding: .8rem 0;
+}
+
+.dropzone p {
+    margin: 0;
+    text-align: center;
+    width: 100%
+}
+
+.dropzone.dropzone-dragging {
+    border-color: #000
+}
+
+span,li,option,p,input,textarea{
+    font-family: "Nunito",sans-serif;
+}
+
+input[type="file" i] {
+    height: 100%;
+    left: 0;
+    outline: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    align-items: baseline;
+    color: inherit;
+    text-align: start !important;
+}
